@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/static/css/main.css">
+
+    <title>Mars Rovers</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Mars Rovers</h1>
+        </header>
+
+        <div id="size">
+            <div id="sizeInputs">
+                <span>Size:</span>
+                <input type="number" id="sizeX" value="10" max="25" min="2">
+                <span> X </span>
+                <input type="number" id="sizeY" value="10" max="25" min="2">
+            </div>
+
+            <button id="createBoard" class="button">
+                Create board
+            </button>
+        </div>
+
+        <p>Click on the squares you want to place the rovers. Click again to rotate the rover.</p>
+
+        <div id="gameArea">
+            <div id="board">
+            </div>
+            <div id="rovers">
+            </div>
+        </div>
+
+        <button id="start" class="button">Start</button>
+    </div>
+    
+    <script src="dist/bundle.js" type="text/javascript"></script>
+</body>
+</html>
