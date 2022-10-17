@@ -261,7 +261,7 @@ async function startAlgorithm() {
         })
     }
 
-    for (const { roverX, roverY, roverInstructions } of instructionsToRun) {
+    for (let { roverX, roverY, roverInstructions } of instructionsToRun) {
         if (['.', 'X'].includes(board[roverX][roverY])) {
             continue;
         }
